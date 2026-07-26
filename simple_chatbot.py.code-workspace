@@ -1,7 +1,42 @@
-{
-	"folders": [
-		{
-			"path": "../.vscode"
-		}
-	]
-}
+print("welcome to simple chatbot!")
+print("hello")
+print("good morning")
+print("Welcome to Simple ChatBot!")
+print("Type 'bye' to exit.")
+
+while True:
+    user = input("You: ").lower()
+
+    if user == "hi" or user == "hello":
+        print("Bot: Hello! How can I help you?")
+
+    elif "how are you" in user:
+        print("Bot: I'm doing great!")
+
+    elif "your name" in user:
+        print("Bot: My name is Python ChatBot.")
+
+    elif "who created you" in user:
+        print("Bot: I was created using Python.")
+
+    elif "weather" in user:
+        print("Bot: Sorry, I can't check live weather.")
+
+    elif "time" in user:
+        print("Bot: I don't know the current time.")
+
+    elif "date" in user:
+        print("Bot: Sorry, I cannot tell today's date.")
+
+    elif "thank" in user:
+        print("Bot: You're welcome!")
+
+    elif "help" in user:
+        print("Bot: Ask me about my name, weather, greetings, etc.")
+
+    elif "bye" in user:
+        print("Bot: Goodbye! Have a nice day.")
+        break
+
+    else:
+        print("Bot: Sorry, I didn't understand that.") 
